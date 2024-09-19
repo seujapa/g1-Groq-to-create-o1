@@ -4,7 +4,9 @@ import os
 import json
 import time
 
-client = groq.Groq()
+client = groq.Groq(
+       api_key="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"
+)
 
 def make_api_call(messages, max_tokens, is_final_answer=False):
     for attempt in range(3):
